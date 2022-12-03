@@ -116,3 +116,7 @@
       grid-template-columns: repeat(2,1fr);
   }
 }
+/* .mdvcm_blog_grid  .container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+} */

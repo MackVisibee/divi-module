@@ -42,7 +42,7 @@ class OurTeam_Parent extends ET_Builder_Module {
 		// $this->icon for using etbuilder font-icon. (See CustomCta / DICM_CTA class)
 		$this->icon_path =  plugin_dir_path( __FILE__ ) . 'icon.svg';
 
-		$this->child_item_text	= esc_html__( 'Add New Member', 'our-team' );
+		$this->child_item_text	= esc_html__( 'Member', 'our-team' );
 
 		//$this->main_tabs = $this->get_main_tabs();
 		// Toggle settings

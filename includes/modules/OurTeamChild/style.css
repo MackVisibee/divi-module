@@ -84,11 +84,7 @@
 .mc_et_pb_flipbox .flipbox-top {
  margin-bottom:1.5rem
 }
-.button_bottom {
- position:absolute;
- bottom:2rem;
- width:100%
-}
+
 .mc_et_pb_flipbox .flipbox-bottom {
  margin:auto;
  margin-bottom:0;

@@ -82,40 +82,40 @@ class MC_FlipBox_Parent extends ET_Builder_Module {
 	 *
 	 * @return array
 	 */
-	function get_advanced_fields_config() {
-		return array(
-			'max_width' => array(
-				'use_max_width'        => true, // default
-				'use_module_alignment' => true, // default
-				'options' => array(
-					'max_width' => array(
-						'default' => '100%',
-						'range_settings'  => array(
-							'min'  => '0',
-							'max'  => '100',
-							'step' => '1',
-						),
-					),
-					'max_width_tablet' => array(
-						'default' => '100%',
-						'range_settings'  => array(
-							'min'  => '0',
-							'max'  => '100',
-							'step' => '1',
-						),
-					),
-					'max_width_phone' => array(
-						'default' => '100%',
-						'range_settings'  => array(
-							'min'  => '0',
-							'max'  => '100',
-							'step' => '1',
-						),
-					),
-				),
-			),
-		);
-	}
+	// function get_advanced_fields_config() {
+	// 	return array(
+	// 		'max_width' => array(
+	// 			'use_max_width'        => true, // default
+	// 			'use_module_alignment' => true, // default
+	// 			'options' => array(
+	// 				'max_width' => array(
+	// 					'default' => '100%',
+	// 					'range_settings'  => array(
+	// 						'min'  => '0',
+	// 						'max'  => '100',
+	// 						'step' => '1',
+	// 					),
+	// 				),
+	// 				'max_width_tablet' => array(
+	// 					'default' => '100%',
+	// 					'range_settings'  => array(
+	// 						'min'  => '0',
+	// 						'max'  => '100',
+	// 						'step' => '1',
+	// 					),
+	// 				),
+	// 				'max_width_phone' => array(
+	// 					'default' => '100%',
+	// 					'range_settings'  => array(
+	// 						'min'  => '0',
+	// 						'max'  => '100',
+	// 						'step' => '1',
+	// 					),
+	// 				),
+	// 			),
+	// 		),
+	// 	);
+	// }
 
 	/**
 	 * Render module output
