@@ -2,7 +2,7 @@
 /*
 Plugin Name: MyDiviCustom
 Plugin URI:  https://github.com/VisibleOneMack
-Description: 
+Description: Testing Modules
 Version:     1.0.0
 Author:      Mack
 Author URI:  
