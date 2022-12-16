@@ -54,7 +54,7 @@ class OurTeam_Child extends ET_Builder_Module {
 		// uncomment to disable cache builder
 
 		// Module name
-		$this->name             = esc_html__( 'Facette de la flip box', 'our-team' );
+		$this->name             = esc_html__( 'Edit Member', 'our-team' );
 
 		$this->main_css_element = '%%order_class%%.our_team_parent_child';
 
@@ -88,78 +88,78 @@ class OurTeam_Child extends ET_Builder_Module {
 				'label'           => esc_html__( 'Title', 'our-team' ),
 				'type'            => 'text',
 				'option_category' => 'basic_option',
-				'description'     => esc_html__( 'Le texte saisi ici s\'affichera comme titre de la facette.', 'our-team' ),
+				'description'     => esc_html__( 'Your Title Here', 'our-team' ),
 				'toggle_slug'     => 'main_content',
 			),
 			'content' => array(
-				'label'           => esc_html__( 'Contenu', 'our-team' ),
+				'label'           => esc_html__( 'Content', 'our-team' ),
 				'type'            => 'tiny_mce',
 				'option_category' => 'basic_option',
 				'description'     => esc_html__( 'Le texte saisi ici s\'affichera comme contenu de la facette', 'our-team' ),
 				'toggle_slug'     => 'main_content',
 			),
-			'use_flip_icon' => array(
-				'label'           => esc_html__( 'Afficher l\'icône de rotation', 'our-team' ),
-				'type'            => 'yes_no_button',
-				'option_category' => 'basic_option',
-				'options'         => array(
-					'off' => esc_html__( 'Non', 'our-team' ),
-					'on'  => esc_html__( 'Oui', 'our-team' ),
-				),
-				'description' => esc_html__( 'Choisissez si vous souhaitez afficher une icône de rotation', 'our-team' ),
-				'default_on_front'=> 'off',
-				'toggle_slug'     => 'main_content',
-			),
+			// 'use_flip_icon' => array(
+			// 	'label'           => esc_html__( 'Afficher l\'icône de rotation', 'our-team' ),
+			// 	'type'            => 'yes_no_button',
+			// 	'option_category' => 'basic_option',
+			// 	'options'         => array(
+			// 		'off' => esc_html__( 'Non', 'our-team' ),
+			// 		'on'  => esc_html__( 'Oui', 'our-team' ),
+			// 	),
+			// 	'description' => esc_html__( 'Choisissez si vous souhaitez afficher une icône de rotation', 'our-team' ),
+			// 	'default_on_front'=> 'off',
+			// 	'toggle_slug'     => 'main_content',
+			// ),
 			'button_text' => array(
-				'label'           => esc_html__( 'Texte du bouton', 'our-team' ),
+				'label'           => esc_html__( 'Button Text', 'our-team' ),
 				'type'            => 'text',
 				'option_category' => 'basic_option',
-				'description'     => esc_html__( 'Le texte du bouton.', 'our-team' ),
+				'description'     => esc_html__( 'Button Text Here', 'our-team' ),
 				'toggle_slug'     => 'button',
 			),
 			'button_url' => array(
 				'label'           => esc_html__( 'Button URL', 'our-team' ),
 				'type'            => 'text',
 				'option_category' => 'basic_option',
-				'description'     => esc_html__( 'L\'URL du bouton.', 'our-team' ),
+				'description'     => esc_html__( 'Button url here', 'our-team' ),
 				'toggle_slug'     => 'button',
 			),
 			'button_url_new_window' => array(
 				'default'         => 'off',
 				'default_on_front'=> true,
-				'label'           => esc_html__( 'Ouverture du lien', 'our-team' ),
+				'label'           => esc_html__( 'Open new window', 'our-team' ),
 				'type'            => 'select',
 				'option_category' => 'configuration',
 				'options'         => array(
-					'off' => esc_html__( 'Dans la même fenêtre', 'our-team' ),
-					'on'  => esc_html__( 'Dans un nouvel onglet', 'our-team' ),
+					'off' => esc_html__( 'default', 'our-team' ),
+					'on'  => esc_html__( 'New Window', 'our-team' ),
 				),
 				'toggle_slug'     => 'button',
 				'description'     => esc_html__( 'Choisissez si le lien s\'ouvre dans une nouvelle fenêtre ou non.', 'our-team' ),
 			),
 			'use_icon' => array(
-				'label'           => esc_html__( 'Utiliser une îcône', 'our-team' ),
+				'label'           => esc_html__( 'Use Icon', 'our-team' ),
 				'type'            => 'yes_no_button',
 				'option_category' => 'basic_option',
 				'options'         => array(
-					'off' => esc_html__( 'Non', 'our-team' ),
-					'on'  => esc_html__( 'Oui', 'our-team' ),
+					'off' => esc_html__( 'Off', 'our-team' ),
+					'on'  => esc_html__( 'On', 'our-team' ),
 				),
 				'toggle_slug'     => 'image',
 				'affects'         => array(
 					'font_icon',
 					'image',
 				),
-				'description' => esc_html__( 'Choisissez si vous souhaitez afficher une icône à afficher en entête.', 'our-team' ),
+				'description' => esc_html__( 'Choose options', 'our-team' ),
 				'default_on_front'=> 'off',
 			),
 			'font_icon' => array(
-				'label'               => esc_html__( 'Icône', 'our-team' ),
+				'label'               => esc_html__( 'Icon', 'our-team' ),
 				'type'                => 'select_icon',
 				'option_category'     => 'basic_option',
 				'class'               => array( 'et-pb-font-icon' ),
 				'toggle_slug'         => 'image',
-				'description'         => esc_html__( 'Choisissez une icône.', 'our-team' ),
+				'description'         => esc_html__( 'Choose an icon', 'our-team' ),
 				'depends_show_if'     => 'on',
 			),
 			'image' => array(
@@ -170,7 +170,7 @@ class OurTeam_Child extends ET_Builder_Module {
 				'choose_text'        => esc_attr__( 'Choose an Image', 'our-team' ),
 				'update_text'        => esc_attr__( 'Set As Image', 'our-team' ),
 				'depends_show_if'    => 'off',
-				'description'        => esc_html__( 'Téléversez une image à afficher en entête.', 'our-team' ),
+				'description'        => esc_html__( 'Image here', 'our-team' ),
 				'toggle_slug'        => 'image',
 			),
 			'module_alignment' => array(
@@ -181,19 +181,19 @@ class OurTeam_Child extends ET_Builder_Module {
 				'tab_slug'        => 'advanced',
 				'toggle_slug'	  => 'width',
 			),
-			'title_shadow' => array(
-				'label'           => esc_html__( 'Afficher l\'ombre du titre', 'our-team' ),
-				'type'            => 'yes_no_button',
-				'option_category' => 'basic_option',
-				'options'         => array(
-					'off' => esc_html__( 'Non', 'our-team' ),
-					'on'  => esc_html__( 'Oui', 'our-team' ),
-				),
-				'description' => esc_html__( 'Choisissez si vous souhaitez afficher l\'ombre du titre', 'our-team' ),
-				'default_on_front'=> 'off',
-				'tab_slug'		  => 'advanced',
-				'toggle_slug'     => 'title',
-			),
+			// 'title_shadow' => array(
+			// 	'label'           => esc_html__( 'Afficher l\'ombre du titre', 'our-team' ),
+			// 	'type'            => 'yes_no_button',
+			// 	'option_category' => 'basic_option',
+			// 	'options'         => array(
+			// 		'off' => esc_html__( 'Non', 'our-team' ),
+			// 		'on'  => esc_html__( 'Oui', 'our-team' ),
+			// 	),
+			// 	'description' => esc_html__( 'Choisissez si vous souhaitez afficher l\'ombre du titre', 'our-team' ),
+			// 	'default_on_front'=> 'off',
+			// 	'tab_slug'		  => 'advanced',
+			// 	'toggle_slug'     => 'title',
+			// ),
 		);
 	}
 
@@ -208,7 +208,7 @@ class OurTeam_Child extends ET_Builder_Module {
 		return array(
 			'fonts'                 => array(
 				'title' => array(
-					'label'    => esc_html__( 'Titre', 'our-team' ),
+					'label'    => esc_html__( 'Title', 'our-team' ),
 					'css'      => array(
 						'main' => "{$this->main_css_element} .flipbox-title",
 						'font' => "{$this->main_css_element} .flipbox-title",
@@ -224,7 +224,7 @@ class OurTeam_Child extends ET_Builder_Module {
 					'hide_text_shadow' => true,
 				),
 				'content'   => array(
-					'label'    => esc_html__( 'Contenu', 'our-team' ),
+					'label'    => esc_html__( 'Content', 'our-team' ),
 					'css'      => array(
 						'main'        => "{$this->main_css_element} .flipbox-content p",
 						'color'       => "{$this->main_css_element}, {$this->main_css_element} .flipbox-content *",
@@ -312,8 +312,8 @@ class OurTeam_Child extends ET_Builder_Module {
 		}
 		// Module specific props added on $this->get_fields()
 		$title                 = $this->props['title'];
-		$use_flip_icon         = $this->props['use_flip_icon'];
-		$title_shadow 		   = $this->props['title_shadow'];
+		// $use_flip_icon         = $this->props['use_flip_icon'];
+		// $title_shadow 		   = $this->props['title_shadow'];
 		$button_text           = $this->props['button_text'];
 		$button_url            = $this->props['button_url'];
 		$button_url_new_window = $this->props['button_url_new_window'];
@@ -334,19 +334,19 @@ class OurTeam_Child extends ET_Builder_Module {
 		) );
 
 		$title_class = 'flipbox-title et_pb_module_header';
-		if ( 'on' === $title_shadow ) {
-			$title_class .= ' title_shadow';
-		}
+		// if ( 'on' === $title_shadow ) {
+		// 	$title_class .= ' title_shadow';
+		// }
 
 		if ( '' !== $title ) {
 			$title = sprintf( '<%1$s class="%3$s">%2$s</%1$s>', et_pb_process_header_level( $title_level, 'h2' ), $title, $title_class );
 		}
 
-		if ( 'on' === $use_flip_icon ) {
-			$flip_icon = '<div class="et_pb_button rotate_button"></div>';
-		} else {
-			$flip_icon = '';
-		}
+		// if ( 'on' === $use_flip_icon ) {
+		// 	$flip_icon = '<div class="et_pb_button rotate_button"></div>';
+		// } else {
+		// 	$flip_icon = '';
+		// }
 
 		// Render module content
 		$output = sprintf(
@@ -357,13 +357,13 @@ class OurTeam_Child extends ET_Builder_Module {
 			</div>
 			<div class="button_bottom">
 				%4$s
-			</div>
-			<div class="flipbox-bottom">%5$s</div>',
+			</div>',
+			//<div class="flipbox-bottom">%5$s</div>',
 			$image,
 			$title,
 			et_core_sanitized_previously( $this->content ),
 			et_core_sanitized_previously( $button ),
-			$flip_icon
+			// $flip_icon
 		);
 
 		return $output;

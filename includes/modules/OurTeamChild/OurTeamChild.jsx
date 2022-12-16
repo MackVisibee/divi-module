@@ -219,11 +219,11 @@ class OurTeamChild extends Component {
 
     const CustomTag = `${ !!( this.props.title_level ) ? this.props.title_level : 'h2' }`;
 
-    const useShadow  = 'on' === this.props.title_shadow ? true : false;
+    // const useShadow  = 'on' === this.props.title_shadow ? true : false;
 
     const titleClass = {
       'flipbox-title': true,
-      'title_shadow': useShadow
+      // 'title_shadow': useShadow
     }
 
     return (
@@ -253,11 +253,11 @@ class OurTeamChild extends Component {
         <div className="button_bottom">
           { this._renderButton() }
         </div>
-        { 'on' === this.props.use_flip_icon && (
+        {/* { 'on' === this.props.use_flip_icon && (
           <div className="flipbox-bottom">
             <a className="rotate_button" href="#"></a>
           </div>
-        ) }
+        ) } */}
       </Fragment>
     );
   }
